@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    /* Fazer:
+    - adicionar javascript ao projeto login;
+    - adicionar form ao projeto cardapio;
+    - ajeitar acessibilidade.
+    */
+}
+
+body{
+    background-color: #f2d7d7;
+}
+
+.btn-voltar{
+    display: inline-block;
+    align-items: start;
+    height: 1em;
+    position: absolute;
+    padding: 0.5em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.cards{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 20em;
+    width: 26em;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: flex-end;
+}
+.card-img{
+    background: url(images/A-terra-de-todos.jpg)
+    no-repeat top center/cover;
+}
+
+.card-img2{
+    background: url(images/Miau-Catcafé.jpg)
+    no-repeat top center/cover;
+}
+.card-img3{
+    background: url(images/pagina-login.jpg)
+    no-repeat top center/cover;
+}
+
+.card-conteudo{
+    position: relative;
+    padding: 1.25em;
+    background-color: #fff;
+    color: #5c1A55;
+    border-top-left-radius: 1.25x;
+    /*cursor: pointer;*/
+    transform: translateY(47%);
+    transition: transform 0.3s;
+}
+
+.card-conteudo::before{
+    content: "";
+    position: absolute;
+    top: -52px;
+    right: -48px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    box-shadow: inset -48px -48px;
+}
+
+.card-descricao{
+    padding-top: 2em;
+}
+
+.card-conteudo a{
+    text-decoration: none;
+    color: #5c1A55;
+    background-color: plum;
+    border-radius: .3em;
+    padding: .1em;
+}
+
+.card-titulo{
+    font-size: 1.88em;
+    padding-bottom:.3em;
+}
+
+
+.card-conteudo:hover{
+    transform: translate(0);
+}
+
+@media (max-width:750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-voltar{
+        padding: .5em;
+    }
+}
