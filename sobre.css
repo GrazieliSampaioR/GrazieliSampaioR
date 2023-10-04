@@ -1,3 +1,4 @@
+/* Formatações desejadas para toda página usando reset css: */
 *{
     padding: 0;
     margin:0;
@@ -9,20 +10,22 @@
     - colocar logo de python    
     */
 }
+/* Formatação do body utilizando grid: */
 body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 2em 1fr);
     background-color:#f2d7d7;
 }
-
-.btn-voltar{
+/* Botão funcional de voltar para página inicial */
+.btn-nav{
     align-items: start;
     grid-column:1/-1;
     grid-row: 1;
     height: 2em;
     padding: .2em .5em;
 }
+/* Estilização das informações sobre mim: */
 .info-sobre-mim{
     display: flex;
     align-items: center;
@@ -36,8 +39,8 @@ body {
     padding-top: 1em;
 }
 .img-perfil{
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em;
     border-radius: .5em;
     border: outset .3em rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.25);
@@ -62,7 +65,7 @@ body {
 .conteudo-sobre-mim hr{
    border-color: black;
 }
-
+/* Tecnologias que estudei durante o curso, área da página estilizada em display:grid*/
 .tecnologias{
     grid-row: 3/-1;
     grid-column: 1/-1;
@@ -93,6 +96,8 @@ body {
     width: 10em;
     height: 10em;
 }
+
+/* Responsividade */
 
 @media (max-width:600px){
     .info-sobre-mim{

@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="contato.css">
     <title>Contatos</title>
 </head>
 <body>
-    <Section class="contato">
-        <div class="form-contato">
-        <div class="btn-voltar">
-            <a href="index.html"><img src="images/voltar.png" alt="botão de voltar"></a>
-        </div>
+    <!-- Seção de formulário para contato -->
+     <!-- Botões de navegação entre páginas: -->
+    <div class=" g-col-2 btn-nav">
+        <a href="index.html"><img src="images/voltar.png" alt="botão de voltar para pagina inicial"></a>
+        <a href="sobre.html"><img src="images/avatar.png" alt="botão da pagina sobre o profissional"></a>
+        <a href="projetos.html"><img src="images/projects.png" alt="botão da pagina de projetos"></a>
+    </div>
+    <Section class="grid text-center contato">
+        <div class="g-col-5">
         <div class="form">
+    <!-- Formulário de contato exigido -->
             <h1>Contato</h1>
             <p>Para mais informações e orçamentos, me mande uma mensagem!</p>
-            <form action="" method="get">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required="">
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
-            
-            <input type="submit" value="Enviar" class="btn-enviar">
+            <!-- forms estilizado com bootstrap e validado com javascript -->
+            <form action="" method="get" class="form-input needs-validation">
+              <!-- Method get usado para evitar erro 405 -->
+                  <div class="form-floating mb-2">
+                    <input type="text" name="text" class="form-control" id="floatingPassword" placeholder="Seu nome" required >
+                    <label for="floatingPassword">Nome</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com" required >
+                    <label for="floatingInput">Email</label>
+                  </div>
+                  <div class="form-floating text-area">
+                    <textarea class="form-control" id="textarea" placeholder="Deixe sua mensagem aqui" id="floatingTextarea"></textarea>
+                    <label class="floatingInput">Mensagem</label>
+                  </div>
+                <input type="submit" value="Enviar" class="btn-enviar" id="enviar">
             </form>
         </div>
         </div>
-        <div class="info-contato">
+        <div class="g-col-5 info-contatos">
+        <!-- Icones de informações de contato: -->
             <h2>Info</h2>
             <img src="images/comment.png" alt="contato por email">
             <p>email: grazieli.sampaiio@gmail.com</p>
@@ -38,8 +50,29 @@
             <img src="images/location.png" alt="endereço">
             <p>Nova Iguaçu - Rj</p>
             <img src="images/clock.png" alt="horario de atendimento">
-            <p>Horário comercial: 8h ás 17h</p>
+            <p>Horário de atendimento em breve</p>
         </div>
     </Section>
+    <!-- Validacao de formulario feita com javascript -->
+    <script>
+          (function (){
+            'use strict';
+            // variaveis e acesso ao html:
+            var $form = document.querySelector('form');
+            var $text = document.getElementsByName('text');
+            var $email = document.getElementsByName('email');
+            var $textarea = document.getElementsById('textarea');
+            var $enviar = document.getElementById('enviar');
+            // Adicao de evento com funcao que impede envio sem campos preenchidos:
+            $form.addEventListener('submit', function(e){
+              if(!$text.values || !$email.values) {
+                alert('Preencha todos os campos');
+                e.preventDefault();
+              }
+            });
+
+          })()
+// A funcao de envio esta impedindo o envio e mostrando uma mensagem caso alguma informacao falte.
+    </script>
 </body>
 </html>

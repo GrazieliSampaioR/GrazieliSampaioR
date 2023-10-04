@@ -1,3 +1,4 @@
+/* Formatações desejadas para toda página com resert css: */
 *{
     padding: 0;
     margin:0;
@@ -5,12 +6,13 @@
     font-family: 'Roboto Mono', monospace;
     /* Fazer: 
     - melhorar background;
-    - trocar a foto se possivel (s/prioridade)
     */
 }
+/* formatações do body inteiro: */
 body{
     background-color: #f2d7d7;
 }
+/* Menu fixo clicável c/ formatação neutra e simples */
 .menu-fixo{
     display: flex;
     text-align: center;
@@ -43,6 +45,7 @@ body{
     list-style-type: none;
     padding: 1em;
 }
+/* Parte de estilização da imagem no padrão circular com borda sólida, titulo e subtitulo com nome e formação. */
 .perfil{
     display: flex;
     align-items: center;
@@ -60,10 +63,61 @@ body{
 .titulo, .subtitulo{
     text-align: center;
 }
+/* Icone de redes sociais:*/
 .iconsredes{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 2em;
     gap: 1em;
+}
+
+/* Botão que leva ao currículo desenvolvido para o projeto Elas na tech: */
+
+.curriculo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6em;
+}
+
+.btn-curriculo a {
+    text-decoration:none;
+    color: #ffffff;
+    padding: .8em;
+    width: 5em;
+    height: 3em;
+    border-radius: .5em;
+    background-color: #f59b9e;
+}
+
+.btn-curriculo li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-curriculo {
+    list-style-type: none;
+}
+
+/* Estilização do rodapé com créditos exigido nos requisitos mínimos: */
+
+.rodape{
+    padding-top: 1em;
+    text-align: center;
+}
+
+.creditos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+    gap: 1.5em;
+    background-color: #f59b9e;
+}
+
+.creditos a{
+    color: #ffffff;
+    text-decoration: none;
 }

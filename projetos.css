@@ -9,29 +9,30 @@
     - ajeitar acessibilidade.
     */
 }
-
+/* Formatção do body: */
 body{
     background-color: #f2d7d7;
 }
-
-.btn-voltar{
+/* Botão funcional para facilitar a volta para página inicial: */
+.btn-nav{
     display: inline-block;
     align-items: start;
     height: 1em;
     position: absolute;
-    padding: 0.5em;
+    padding: 1em;
 }
-
+/* Estilização dos cards com nome e descrição dos projetos, desenvolvido com tutorial estudado: */
 .container{
+/* Formatação da área de card com grid de duas colunas*/
     display: grid;
     grid-template-columns: repeat(2, 400px);
     height: auto;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 3.5em 2em 3.5em;
     gap: 2em;
 }
-
+/* Fomatação dos cards, alinhamento em coluna. */
 .cards{
     display: flex;
     align-items:center;
@@ -42,6 +43,7 @@ body{
     overflow: hidden;
     align-items: flex-end;
 }
+/* Imagens dos projetos desenvolvidos: */
 .card-img{
     background: url(images/A-terra-de-todos.jpg)
     no-repeat top center/cover;
@@ -55,7 +57,7 @@ body{
     background: url(images/pagina-login.jpg)
     no-repeat top center/cover;
 }
-
+/* Área do card que após interação é sobe e mostra a descrição do projeto. */
 .card-conteudo{
     position: relative;
     padding: 1.25em;
@@ -66,7 +68,7 @@ body{
     transform: translateY(47%);
     transition: transform 0.3s;
 }
-
+/* Detalhe lateral em lua que acompanha o hover. */
 .card-conteudo::before{
     content: "";
     position: absolute;
@@ -78,7 +80,7 @@ body{
     border-radius: 50%;
     box-shadow: inset -48px -48px;
 }
-
+/* Estilização do conteudo, descrição e título: */
 .card-descricao{
     padding-top: 2em;
 }
@@ -95,12 +97,12 @@ body{
     font-size: 1.88em;
     padding-bottom:.3em;
 }
-
-
+/* Hover que mostra a descrição quando o ponteiro interage com o card. */
 .card-conteudo:hover{
     transform: translate(0);
 }
 
+/* Responsividade básica: */
 @media (max-width:750px){
     .container{
         display: flex;

@@ -5,5 +5,40 @@
     font-family: 'Roboto Mono', monospace;
     /* font-size: 62.5%; */
 }
-/* ESTILIZAR USANDO BOOTSTRAP 
-*/
+
+body{
+    background-color:#f2d7d7;
+}
+
+.btn-nav {
+    align-items: start;
+    padding: 1em;
+}
+
+.contato{
+    display: flex;
+    padding-top: 4em ;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+.btn-enviar{
+    width: 7em;
+    padding: .5em;
+    background-color: #f8dfe3;
+}
+
+.info-contatos{
+    text-align: start;
+    /* align-items: start; */
+}
+
+/* Responsividade */
+@media (max-width:600px) {
+    .contato{
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+}
