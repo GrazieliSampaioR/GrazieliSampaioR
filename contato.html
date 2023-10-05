@@ -22,11 +22,11 @@
             <h1>Contato</h1>
             <p>Para mais informações e orçamentos, me mande uma mensagem!</p>
             <!-- forms estilizado com bootstrap e validado com javascript -->
-            <form action="" method="get" class="form-input needs-validation">
+            <form action="#" method="get" class="form-input needs-validation">
               <!-- Method get usado para evitar erro 405 -->
                   <div class="form-floating mb-2">
-                    <input type="text" name="text" class="form-control" id="floatingPassword" placeholder="Seu nome" required >
-                    <label for="floatingPassword">Nome</label>
+                    <input type="text" name="text" class="form-control" id="floatingInputname" placeholder="Seu nome" required >
+                    <label for="floatingInputname">Nome</label>
                   </div>
                   <div class="form-floating">
                     <input type="email" name="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com" required >
@@ -36,7 +36,7 @@
                     <textarea class="form-control" id="textarea" placeholder="Deixe sua mensagem aqui" id="floatingTextarea"></textarea>
                     <label class="floatingInput">Mensagem</label>
                   </div>
-                <input type="submit" value="Enviar" class="btn-enviar" id="enviar">
+                <button type="button" class="btnenviar" id="btn">Enviar</button>
             </form>
         </div>
         </div>
@@ -54,25 +54,7 @@
         </div>
     </Section>
     <!-- Validacao de formulario feita com javascript -->
-    <script>
-          (function (){
-            'use strict';
-            // variaveis e acesso ao html:
-            var $form = document.querySelector('form');
-            var $text = document.getElementsByName('text');
-            var $email = document.getElementsByName('email');
-            var $textarea = document.getElementsById('textarea');
-            var $enviar = document.getElementById('enviar');
-            // Adicao de evento com funcao que impede envio sem campos preenchidos:
-            $form.addEventListener('submit', function(e){
-              if(!$text.values || !$email.values) {
-                alert('Preencha todos os campos');
-                e.preventDefault();
-              }
-            });
-
-          })()
-// A funcao de envio esta impedindo o envio e mostrando uma mensagem caso alguma informacao falte.
+    <script src="index.js">
     </script>
 </body>
 </html>
