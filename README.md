@@ -1,6 +1,23 @@
-### Hi there 👋
+<h1>Olá pessoal, me chamo Grazieli!</h1>
+<h2>Assistente administrativo na <a href="https://www.condornaoletal.com.br/" target="_blank"> Condor </a></h2>
+  
+### ✨ Estou estudando:
+<div>
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg">
+</div>
 
-- 🔭 Atualmente procuro trabalho na área de TI;
-- ✨ Estudando desenvolvimento web;
-- 📞 Contate - me pelo email: grazieli.sampaiio@gmail.com
-- 😄 Pronomes: Ela/Dela;
+### ✨ Tecnologias e ferramentas:
+<div>
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg">
+  <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
+</div>
+
+### Você pode entrar em contato comigo usando:
+<div>
+  <a href="https://www.linkedin.com/in/Grazieli-Sampaio-Reis" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+   <a href = "mailto:grazieli.sampaiio@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+</div>
+
