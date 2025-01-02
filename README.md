@@ -1,5 +1,5 @@
 <h1>Olá pessoal, me chamo Grazieli!</h1>
-<h2>Assistente administrativo na <a href="https://www.condornaoletal.com.br/" target="_blank"> Condor </a></h2>
+<h2>Assistente no setor de processos e produtos (SPARK) na <a href="https://www.condornaoletal.com.br/" target="_blank"> Condor </a></h2>
   
 ### ✨ Estou estudando:
 <div>
